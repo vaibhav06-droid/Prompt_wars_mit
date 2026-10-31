@@ -1,26 +1,38 @@
-# Logs
-logs
-*.log
+# dependencies (takes > 300MB, reinstalled via npm install)
+node_modules/
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# Next.js build output & cache (takes > 100MB, generated on build)
+/.next/
+/out/
+.next
+
+# production
+/build
+
+# environment and secrets
+.env
+.env*.local
+*.pem
+
+# debug logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
+.pnpm-debug.log*
 
-# Dependencies (MUST be ignored to keep repo < 10MB)
-node_modules/
-dist/
-dist-ssr/
-*.local
-
-# Editor directories and OS files
-.vscode/*
-!.vscode/extensions.json
-.idea/
+# system & IDE
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# TypeScript cache
+*.tsbuildinfo
 
